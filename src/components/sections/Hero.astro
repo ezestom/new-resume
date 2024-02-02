@@ -1,0 +1,139 @@
+---
+import { basics } from "@/cv.json";
+import Section from "@/components/Section.astro";
+import Email from "@/icons/Email.astro";
+import Phone from "@/icons/Phone.astro";
+import Github from "@/icons/Github.astro";
+import Linkedin from "@/icons/Linkedin.astro";
+import Whatsapp from "@/icons/Whatsapp.astro";
+import Briefcase from "@/icons/Briefcase.astro";
+import Links from "@/icons/Links.astro";
+import WorldMap from "@/icons/WorldMap.astro";
+
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, country } = location;
+
+const SOCIAL_ICONS: Record<string, any> = {
+	Github,
+	Linkedin,
+	Whatsapp,
+	Briefcase,
+	Links,
+};
+const whatsapp = "https://wa.me/+5491168641122";
+---
+
+<Section>
+	<div class="container">
+		<div class="info">
+			<h1>{name}</h1>
+			<h2>{label}</h2>
+			<span>
+				<WorldMap />
+				{city}, {country}
+			</span>
+			<footer>
+				{
+					email && (
+						<a
+							href={`mailto:${email}`}
+							title={`Send an email to ${name} at ${email}`}
+							target="_blank"
+							rel="noopener noreferrer">
+							<Email />
+						</a>
+					)
+				}
+				{
+					whatsapp && (
+						<a
+							href={`phone:${email}`}
+							title={`Send a message to ${name} at ${whatsapp}`}
+							target="_blank"
+							rel="noopener noreferrer">
+							<Whatsapp />
+						</a>
+					)
+				}
+				{
+					profiles.map(({ network, url, username }) => {
+						const Icon = SOCIAL_ICONS[network];
+
+						return (
+							<a
+								href={url}
+								title={`Visit ${name}'s profile on ${network}`}
+								target="_blank"
+								rel="noopener noreferrer">
+								<Icon />
+							</a>
+						);
+					})
+				}
+			</footer>
+		</div>
+		<figure>
+			<img src={image} alt={name} />
+		</figure>
+	</div>
+</Section>
+
+<style>
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+	}
+	.info {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		padding-right: 32px;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		color: #444;
+		font-weight: 500;
+		font-size: 1.1rem;
+		text-wrap: balance;
+	}
+	img {
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		width: 128px;
+		border-radius: 1rem;
+	}
+	span {
+		color: #666;
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+		font-size: 0.85rem;
+		letter-spacing: -0.05;
+	}
+	footer {
+		display: flex;
+		gap: 4px;
+		margin-top: 8px;
+	}
+	footer a {
+		color: #777;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #eee;
+		padding: 4px;
+		height: 32px;
+		width: 32px;
+		border-radius: 6px;
+		transition: all.3s ease;
+	}
+	footer a:hover {
+		color: #333;
+		background-color: #eee;
+		border-color: #ddd;
+	}
+</style>
