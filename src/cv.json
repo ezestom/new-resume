@@ -1,16 +1,17 @@
 {
 	"basics": {
 		"name": "Ezequiel Federico Stom",
-		"label": "+2 Frontend Dev specializing in creating dynamic and engaging applications using JavaScript, React, Astro and CSS-Tailwind.",
-		"image": "../src/img/fotoGithub.jpg",
+		"label": "Frontend Developer with +2 years of experience and proficiency in video editing.",
+		"image": "../src/img/linkedin_img2.jpg",
 		"email": "ezequielstom@gmail.com",
-		"phone": "+34 688888888",
+		"whatsapp": "https://wa.me/+5491168641122",
+		"phone": "+54 9 11 6864 1122",
 		"url": "https://midu.dev",
-		"summary": "I'm seeking to connect with companies and fellow web development professionals to explore growth opportunities, share knowledge, and collaborate on future projects. Let's join forces and together, let's transform the web development landscape.",
+		"summary": "Frontend Developer with +2 years of experience specializing in crafting dynamic and compelling applications using JavaScript, React, Astro, and CSS-Tailwind. Currently, I am freelancing and based in Buenos Aires, Argentina. I seek to connect with companies and fellow web development professionals to explore growth opportunities, exchange knowledge, and collaborate on future projects.",
 		"location": {
 			"address": "",
 			"postalCode": "B1605",
-			"city": "Buenos Aires",
+			"city": "Vicente López, Buenos Aires",
 			"countryCode": "Ar",
 			"country": "Argentina"
 		},
@@ -21,7 +22,7 @@
 				"url": "https://www.linkedin.com/in/ezequielstom/"
 			},
 			{
-				"network": "Briefcase",
+				"network": "Portfolio",
 				"username": "Ezequiel Stom",
 				"url": "https://ezestom.github.io/portfolio/"
 			},
@@ -31,7 +32,7 @@
 				"url": "https://github.com/ezestom"
 			},
 			{
-				"network": "Links",
+				"network": "LinksCenter",
 				"username": "Ezequiel Stom",
 				"url": "https://links-center.vercel.app/"
 			}
@@ -39,29 +40,12 @@
 	},
 	"work": [
 		{
-			"name": "midudev",
-			"position": "Divulgador sobre Programación Web",
-			"url": "https://twitch.tv/midudev",
-			"startDate": "2021-01-01",
+			"name": "Freelance",
+			"position": "Frontend Developer",
+			"url": "https://ezestom.github.io/portfolio/",
+			"startDate": "2022-02-01",
 			"endDate": null,
-			"summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
-			"highlights": ["Started the company"]
-		},
-		{
-			"name": "Adevinta",
-			"position": "Lead Frontend Architect",
-			"url": "https://twitch.tv/midudev",
-			"startDate": "2016-06-01",
-			"endDate": "2022-09-01",
-			"summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
-			"highlights": ["Started the company"]
-		},
-		{
-			"name": "Hubii",
-			"position": "Senior FrontEnd Developer",
-			"startDate": "2011-03-01",
-			"endDate": "2016-05-01",
-			"summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
+			"summary": "Currently freelancing, staying abreast of the latest technologies and trends in the tech market. Simultaneously, actively seeking my first experience in a high-impact company.",
 			"highlights": ["Started the company"]
 		}
 	],
@@ -78,12 +62,22 @@
 	],
 	"education": [
 		{
-			"institution": "Universitat Oberta de Catalunya",
-			"url": "https://www.uoc.edu/portal/es/index.html",
-			"area": "Ingeniero de Software",
+			"institution": "CTD Digital House",
+			"url": "https://github.com/ezestom/Courses-certificates-/blob/main/Ezequiel%20Stom_CTD_DH_PDF.pdf",
+			"area": "Professional Developer",
 			"studyType": "Bachelor",
-			"startDate": "2003-01-01",
-			"endDate": "2009-01-01",
+			"startDate": "2023-01-01",
+			"endDate": "2024-01-01",
+			"score": "4.0",
+			"courses": ["DB1101 - Basic SQL"]
+		},
+		{
+			"institution": "ONE - Oracle Next Education + Alura",
+			"url": "https://github.com/ezestom/Oracle-Alura-One/blob/main/certificaciones/Ezequiel%20Federico%20Stom%20-%20Certificaci%C3%B3n%20Final%20-%20ONE.pdf",
+			"area": "Professional Developer",
+			"studyType": "Bachelor",
+			"startDate": "2024-01-01",
+			"endDate": "2025-01-01",
 			"score": "4.0",
 			"courses": ["DB1101 - Basic SQL"]
 		}
@@ -130,6 +124,27 @@
 			"keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
 		},
 		{
+			"name": "React",
+			"level": "Avanzado",
+			"keywords": [
+				"Desarrollo Web",
+				"Frontend",
+				"JavaScript Library",
+				"UI"
+			]
+		},
+		{
+			"name": "Astro",
+			"level": "Avanzado",
+			"keywords": [
+				"Desarrollo Web",
+				"Frontend",
+				"JavaScript Framework",
+				"SSR",
+				"Static Generation"
+			]
+		},
+		{
 			"name": "Tailwind",
 			"level": "Avanzado",
 			"keywords": [
@@ -137,16 +152,6 @@
 				"Frontend",
 				"CSS Framework",
 				"Diseño Responsive"
-			]
-		},
-		{
-			"name": "TypeScript",
-			"level": "Avanzado",
-			"keywords": [
-				"Desarrollo Web",
-				"Frontend",
-				"Backend",
-				"JavaScript Superset"
 			]
 		},
 		{
@@ -182,27 +187,6 @@
 				"Código Fuente",
 				"Git"
 			]
-		},
-		{
-			"name": "Next.js",
-			"level": "Avanzado",
-			"keywords": [
-				"Desarrollo Web",
-				"Frontend",
-				"React Framework",
-				"SSR",
-				"Static Generation"
-			]
-		},
-		{
-			"name": "React",
-			"level": "Avanzado",
-			"keywords": [
-				"Desarrollo Web",
-				"Frontend",
-				"JavaScript Library",
-				"UI"
-			]
 		}
 	],
 	"languages": [
@@ -229,60 +213,53 @@
 	],
 	"projects": [
 		{
-			"name": "mars.codes",
+			"name": "Cacta Eco",
 			"isActive": true,
-			"description": "Historia interactiva con retos de programación para viajar a Marte",
-			"highlights": ["Elige tu propia aventura", "En desarrollo"],
-			"url": "https://mars.codes"
-		},
-		{
-			"name": "AdventJS",
-			"isActive": true,
-			"description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+			"description": "Full sustainability app managment for the primary industry.",
 			"highlights": [
-				"+1 millón de visitas",
-				"Multidioma",
-				"JavaScript & TypeScript"
+				"Sustainability",
+				"Environment",
+				"Management",
+				"Primary Industry"
 			],
-			"url": "https://advent.js/dev"
+			"url": "https://cacta-eco.vercel.app/",
+			"github": "https://github.com/ezestom/Cacta-real-project"
 		},
 		{
-			"name": "Codember",
+			"name": "Steve Professor",
 			"isActive": true,
-			"description": "Juego interactivo de programación con retos y secretos",
+			"description": "Creativity website with Scroll-driven Animations for a English Professor.",
 			"highlights": [
-				"+2000 usuarios activos",
-				"Retos para cualquier lenguaje"
+				"English",
+				"Creativity",
+				"Professor",
+				"Learning",
+				"Scroll-driven Animations"
 			],
-			"url": "https://codember.dev"
+			"url": "https://steve-web.vercel.app/",
+			"github": "https://github.com/ezestom/steve-web"
 		},
 		{
-			"name": "codi.link",
+			"name": "Sebastian 2002",
 			"isActive": true,
-			"description": "Playground de código HTML, CSS y JavaScript para compartir",
+			"description": "AOE2 website for a professional player and streamer, using View Transitions tech.",
 			"highlights": [
-				"100k visitas al mes",
-				"Desarrollado por la comunidad"
+				"AOE2",
+				"Streamer",
+				"Professional Player",
+				"Gaming",
+				"View Transitions"
 			],
-			"url": "https://codi.link",
-			"github": "https://github.com/midudev/codi.link"
+			"url": "https://sebastian2002.vercel.app/",
+			"github": "https://github.com/ezestom/Sebastian2002-AOE-Web"
 		},
 		{
-			"name": "Pruebas Técnicas",
+			"name": "Alloatti SRL",
 			"isActive": true,
-			"description": "Lista de pruebas técnicas de empresas para practicar programación",
-			"highlights": ["100% gratuito", "+500 soluciones de la comunidad"],
-			"url": "https://pruebastecnicas.com",
-			"github": "https://github.com/midudev/pruebas-tecnicas"
-		},
-		{
-			"name": "miduConf",
-			"description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-			"highlights": [
-				"+15k tickets repartidos",
-				"+50k espectadores en directo"
-			],
-			"url": "https://miduconf.com"
+			"description": "Construction machinery for filling and washing water drums.",
+			"highlights": ["Water", "Machine", "Company", "React", "Tailwind"],
+			"url": "https://alloatti.vercel.app/",
+			"github": "https://github.com/ezestom/Alloatti-website"
 		}
 	]
 }

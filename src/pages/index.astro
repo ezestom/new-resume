@@ -9,22 +9,27 @@ import About from "@/components/sections/About.astro";
 import KeyBoardManager from "@/components/KeyBoardManager.astro";
 ---
 
-<Layout title="📄 Ezequiel Stom Resume ">
+<Layout title="Ezequiel Federico Stom Resume">
 	<main>
 		<Hero />
 		<About />
 		<Experience />
-		<Education />
 		<Projects />
 		<Skills />
+		<Education />
 	</main>
 	<KeyBoardManager />
 </Layout>
 
 <style>
-	main{
+	main {
 		padding: 4rem;
 		margin: auto;
 		width: 100%;
+	}
+	@media (width < 700px) {
+		main {
+			padding: 0.75rem;
+		}
 	}
 </style>

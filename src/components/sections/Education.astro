@@ -1,5 +1,86 @@
 ---
 import Section from "../Section.astro";
+
+import { education } from "@/cv.json";
 ---
 
-<Section title="Education" />
+<Section title="Educación">
+	<ul>
+		{
+			education.map(({ institution, startDate, endDate, area, url }) => {
+				const startYear = new Date(startDate).getFullYear();
+				const endYear =
+					endDate != null
+						? new Date(endDate).getFullYear()
+						: "Present";
+				const years = `${startYear} - ${endYear}`;
+
+				return (
+					<li>
+						<article>
+							<header>
+								<div>
+									<h3>{institution}</h3>
+								</div>
+
+								<time>{years}</time>
+							</header>
+
+							<footer>
+								<p>{area}</p>
+							</footer>
+							<a href={url} target="_blank">
+								Certified
+							</a>
+						</article>
+					</li>
+				);
+			})
+		}
+	</ul>
+</Section>
+
+<style>
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	article h3 {
+		font-weight: 500;
+		color: #111;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 4px;
+	}
+
+	time {
+		color: #555;
+		font-size: 0.85rem;
+		min-width: 102px;
+	}
+
+	article a {
+		color: #555;
+		font-size: 0.75rem;
+		background: #f5f5f5;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		padding: 2px 4px;
+		border-bottom: 2px solid #bfbfbf;
+	}
+	article a:hover {
+		background: #fafafa;
+	}
+
+	@media (width <= 700px) {
+		time {
+			text-align: right;
+		}
+	}
+</style>

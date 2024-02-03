@@ -2,25 +2,34 @@
 import { basics } from "@/cv.json";
 import Section from "@/components/Section.astro";
 import Email from "@/icons/Email.astro";
-import Phone from "@/icons/Phone.astro";
 import Github from "@/icons/Github.astro";
 import Linkedin from "@/icons/Linkedin.astro";
 import Whatsapp from "@/icons/Whatsapp.astro";
-import Briefcase from "@/icons/Briefcase.astro";
-import Links from "@/icons/Links.astro";
+import Portfolio from "@/icons/Portfolio.astro";
+import LinksCenter from "@/icons/Links.astro";
 import WorldMap from "@/icons/WorldMap.astro";
 
-const { name, label, image, location, profiles, phone, email } = basics;
+const { name, label, image, location, profiles, whatsapp, email, phone } =
+	basics;
 const { city, country } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
 	Github,
 	Linkedin,
 	Whatsapp,
-	Briefcase,
-	Links,
+	Portfolio,
+	LinksCenter,
 };
-const whatsapp = "https://wa.me/+5491168641122";
+const LinkedInfo = profiles.find(({ network }) => network === "Linkedin");
+const linkedUrl = LinkedInfo?.url;
+const linkcenterInfo = profiles.find(
+	({ network }) => network === "LinksCenter"
+);
+const linksUrl = linkcenterInfo?.url;
+
+const printInfo = [email, phone, linkedUrl, linksUrl]
+	.filter(Boolean)
+	.join(" • ");
 ---
 
 <Section>
@@ -30,9 +39,12 @@ const whatsapp = "https://wa.me/+5491168641122";
 			<h2>{label}</h2>
 			<span>
 				<WorldMap />
-				{city}, {country}
+				{city} - {country}
 			</span>
-			<footer>
+			<footer class="print">
+				{printInfo}
+			</footer>
+			<footer class="no-print">
 				{
 					email && (
 						<a
@@ -44,10 +56,11 @@ const whatsapp = "https://wa.me/+5491168641122";
 						</a>
 					)
 				}
+
 				{
 					whatsapp && (
 						<a
-							href={`phone:${email}`}
+							href={whatsapp}
 							title={`Send a message to ${name} at ${whatsapp}`}
 							target="_blank"
 							rel="noopener noreferrer">
@@ -82,7 +95,7 @@ const whatsapp = "https://wa.me/+5491168641122";
 	.container {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: start;
 		gap: 1rem;
 	}
 	.info {
@@ -103,8 +116,8 @@ const whatsapp = "https://wa.me/+5491168641122";
 	img {
 		aspect-ratio: 1/1;
 		object-fit: cover;
-		width: 128px;
-		border-radius: 1rem;
+		width: 150px;
+		border-radius: 0.5rem;
 	}
 	span {
 		color: #666;
@@ -115,6 +128,8 @@ const whatsapp = "https://wa.me/+5491168641122";
 		letter-spacing: -0.05;
 	}
 	footer {
+		color: #555;
+		font-size: 0.75rem;
 		display: flex;
 		gap: 4px;
 		margin-top: 8px;
@@ -135,5 +150,16 @@ const whatsapp = "https://wa.me/+5491168641122";
 		color: #333;
 		background-color: #eee;
 		border-color: #ddd;
+	}
+	.print {
+		display: none;
+	}
+	@media print {
+		.print {
+			display: block;
+		}
+		.no-print {
+			display: none;
+		}
 	}
 </style>
