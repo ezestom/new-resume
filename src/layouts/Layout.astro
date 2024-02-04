@@ -9,11 +9,23 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
+		<!-- Open Graph Protocol -->
+		<meta property="og:title" content="Ezequiel Federico Stom Resume" />
+		<meta
+			property="og:description"
+			content="Hello! I'm Ezequiel, and this is my resume. Explore my professional journey, skills, and accomplishments. Thank you for taking the time to learn more about me! 👋"
+		/>
+		<meta property="og:type" content="Cv" />
+		<meta property="og:url" content="https://ezestom-resume.vercel.app/" />
+		<meta property="og:image" content="📄" />
+		<link rel="icon" type="image/png" href="./img/resume.svg" />
+		<meta name="theme-color" content="#fafafa" />
+
+		<!-- OGP -->
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/cv.svg" />
-		<meta name="generator" content={Astro.generator} />
+
 		<title>{title}</title>
 	</head>
 	<body>
