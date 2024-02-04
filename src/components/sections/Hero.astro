@@ -8,6 +8,7 @@ import Whatsapp from "@/icons/Whatsapp.astro";
 import Portfolio from "@/icons/Portfolio.astro";
 import LinksCenter from "@/icons/Links.astro";
 import WorldMap from "@/icons/WorldMap.astro";
+import image1 from "@/img/linkedin_img2.jpg";
 
 const { name, label, image, location, profiles, whatsapp, email, phone } =
 	basics;
@@ -86,7 +87,7 @@ const printInfo = [email, phone, linkedUrl, linksUrl]
 			</footer>
 		</div>
 		<figure>
-			<img src={image} alt={`Image about ${name}`} />
+			<img class="img" src={image1.src} alt={`Image about ${name}`} />
 		</figure>
 	</div>
 </Section>
