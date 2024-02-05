@@ -126,21 +126,6 @@ const profilesInfo = profiles.map(({ network, url }) => {
 </script>
 
 <style>
-	@media print {
-		ninja-keys {
-			display: none !important;
-		}
-	}
-
-	@keyframes fadeIn {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
-	}
-
 	@media (min-width: 601px) {
 		#normal-footer {
 			display: block;
@@ -197,5 +182,22 @@ const profilesInfo = profiles.map(({ network, url }) => {
 		padding: 2px 5px;
 		margin: 0 2px;
 		border-bottom: 2px solid #bfbfbf;
+	}
+	@media print {
+		ninja-keys {
+			display: none !important;
+		}
+		footer {
+			display: none !important;
+		}
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
 	}
 </style>
