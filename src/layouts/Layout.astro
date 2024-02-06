@@ -41,7 +41,7 @@ const { title } = Astro.props;
 			Lucida Console,
 			"Courier New",
 			monospace;
-		background-color: #fff;
+		/* background-color: #fff; */
 		letter-spacing: 0.025rem;
 	}
 
@@ -81,11 +81,48 @@ const { title } = Astro.props;
 			"Helvetica Neue",
 			sans-serif;
 	}
+	h2 {
+		color: #444;
+	}
+	h3 {
+		color: #222;
+	}
+	h4 {
+		color: #222;
+	}
+	article a {
+		color: #111;
+	}
+
 	p {
 		color: #666;
 		font-size: 0.9rem;
 		line-height: 1.5;
 		margin: 0;
 		text-wrap: pretty;
+	}
+	/* dark mode */
+	.dark body {
+		background-color: #0c0e10;
+	}
+	.dark h1,
+	.dark h2,
+	.dark a {
+		color: #f0f0f0;
+	}
+
+	.dark h3,
+	.dark h4 {
+		color: #fbfbfb;
+	}
+
+	.dark p,
+	.dark h4 {
+		color: #fafafa;
+	}
+
+	.dark span,
+	.dark time {
+		color: #38bdf8;
 	}
 </style>
