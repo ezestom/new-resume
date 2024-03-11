@@ -222,8 +222,23 @@
 				"Management",
 				"Primary Industry"
 			],
-			"url": "https://cacta-eco.vercel.app/",
+			"url": "https://cacta.eco/",
 			"github": "https://github.com/ezestom/Cacta-real-project"
+		},
+		{
+			"name": "Maiko Fpv",
+			"isActive": true,
+			"description": "Creative Filmmaker Utilizing Drones",
+			"highlights": [
+				"Edition",
+				"4k",
+				"Drones",
+				"Filmmaker",
+				"Technology",
+				"Creativity"
+			],
+			"url": "https://maiko-drone.vercel.app/",
+			"github": "https://github.com/ezestom/Maiko-fpv-web"
 		},
 		{
 			"name": "Steve Professor",
