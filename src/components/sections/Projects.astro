@@ -85,6 +85,7 @@ import Github from "@/icons/Github.astro";
 
 	article h3 span {
 		color: rgb(0, 188, 47);
+		animation: pulse 2s infinite;
 	}
 
 	footer {
@@ -105,6 +106,18 @@ import Github from "@/icons/Github.astro";
 
 	.github-code-link {
 		margin-left: 5px;
+	}
+	@keyframes pulse {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.5;
+		}
+		100% {
+			opacity: 1;
+		}
+		
 	}
 
 	@media (width <= 700px) {

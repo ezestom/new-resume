@@ -1,7 +1,7 @@
 {
 	"basics": {
 		"name": "Ezequiel Federico Stom",
-		"label": "Frontend Developer with +2 years of experience and proficiency in video editing.",
+		"label": "Frontend Developer with +2 years of experience in web development and modern technologies.",
 		"image": "../src/img/linkedin_img2.jpg",
 		"email": "ezequielstom@gmail.com",
 		"whatsapp": "https://wa.me/+5491168641122",
@@ -45,8 +45,8 @@
 			"url": "https://ezestom.github.io/portfolio/",
 			"startDate": "2022-02-01",
 			"endDate": null,
-			"summary": "Currently freelancing, staying abreast of the latest technologies and trends in the tech market. Simultaneously, actively seeking my first experience in a high-impact company.",
-			"highlights": ["Started the company"]
+			"summary": "Currently freelancing, staying up-to-date with the latest technologies and trends in the tech market. Simultaneously, actively seeking my first experience in a high-impact company.",
+			"highlights": "Working with clients like Cacta and Rhino, I have developed a variety of landing pages, e-commerce sites, and web applications. Additionally, I have collaborated with other developers on open-source projects."
 		}
 	],
 	"volunteer": [
@@ -62,7 +62,7 @@
 	],
 	"education": [
 		{
-			"institution": "CTD Digital House",
+			"institution": "CTD Digital House, Mercado Libre & Globant",
 			"url": "https://github.com/ezestom/Courses-certificates-/blob/main/Ezequiel%20Stom_CTD_DH_PDF.pdf",
 			"area": "Professional Developer",
 			"studyType": "Bachelor",
@@ -226,6 +226,22 @@
 			"github": "https://github.com/ezestom/Cacta-real-project"
 		},
 		{
+			"name": "Sushi App",
+			"isActive": true,
+			"description": "Montevideo Sushi Restaurant App.",
+			"highlights": ["Food", "Astro", "Landing Page", "Tailwind"],
+			"url": "https://rhinosushiapp.netlify.app/",
+			"github": "https://github.com/ezestom/sushi-app"
+		},
+			{
+			"name": "Alloatti SRL",
+			"isActive": true,
+			"description": "Construction machinery for filling and washing water drums.",
+			"highlights": ["Water", "Machine", "Company", "React", "Tailwind"],
+			"url": "https://alloatti.vercel.app/",
+			"github": "https://github.com/ezestom/Alloatti-website"
+		},
+		{
 			"name": "Maiko Fpv",
 			"isActive": true,
 			"description": "Creative Filmmaker Utilizing Drones",
@@ -267,14 +283,7 @@
 			],
 			"url": "https://sebastian2002.vercel.app/",
 			"github": "https://github.com/ezestom/Sebastian2002-AOE-Web"
-		},
-		{
-			"name": "Alloatti SRL",
-			"isActive": true,
-			"description": "Construction machinery for filling and washing water drums.",
-			"highlights": ["Water", "Machine", "Company", "React", "Tailwind"],
-			"url": "https://alloatti.vercel.app/",
-			"github": "https://github.com/ezestom/Alloatti-website"
 		}
+	
 	]
 }

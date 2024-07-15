@@ -34,7 +34,20 @@ import { work } from "../../cv.json";
 								</header>
 								<footer>
 									<p>{summary}</p>
+									<p>{highlights}</p>
 								</footer>
+								<small>
+									Linkedin:{" "}
+									<code>
+										<a
+											href="https://www.linkedin.com/company/cactaeco/posts/?feedView=all"
+											target="_blank">
+											Cacta</a>
+										&
+										<a href="https://www.linkedin.com/company/rhino-saas/" target="_blank">
+											Rhino</a>.
+									</code>
+								</small>
 							</article>
 						</li>
 					);
@@ -62,8 +75,12 @@ import { work } from "../../cv.json";
 		align-items: start;
 		margin-bottom: 4px;
 	}
-	time {
+	time,
+	small {
 		font-size: 0.85rem;
 		color: #555;
+	}
+	a:hover {
+		text-decoration: underline;
 	}
 </style>
