@@ -42,7 +42,6 @@ const { title } = Astro.props;
 	figure {
 		margin: 0;
 		padding: 0;
-
 		font-family: "Onest Variable", sans-serif;
 	}
 	a {
@@ -105,8 +104,9 @@ const { title } = Astro.props;
 
 	img {
 		/* que se muestre una vez la animación */
-		animation: custom-animation 5s 1;
+		animation: custom-animation 2s 1;
 		position: relative; /* Necesario para mover los elementos con left y top */
+		rotate: -2.5deg;
 	}
 
 	@keyframes custom-animation {
@@ -129,7 +129,7 @@ const { title } = Astro.props;
 		41% {
 			top: 1%;
 			filter: brightness(1.08) blur(3px);
-			rotate: 1deg;
+			rotate: 2deg;
 		}
 		45% {
 			left: 0;
@@ -142,7 +142,7 @@ const { title } = Astro.props;
 		}
 		85% {
 			filter: brightness(1.08) blur(2px);
-			rotate: -1deg;
+			rotate: -2.5deg;
 		}
 		94.5% {
 			left: 0;
@@ -151,6 +151,7 @@ const { title } = Astro.props;
 		95% {
 			left: 1%;
 			top: 1%;
+			rotate: -1.25deg;
 		}
 		95.5% {
 			left: 0;
@@ -159,7 +160,7 @@ const { title } = Astro.props;
 		100% {
 			filter: brightness(1) blur(0);
 			scale: 1;
-			rotate: 0;
+			rotate: -2deg;
 		}
 	}
 </style>

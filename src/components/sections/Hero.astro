@@ -86,9 +86,23 @@ const printInfo = [email, phone, linkedUrl, linksUrl]
 				}
 			</footer>
 		</div>
-		<figure>
+		<a
+			href="https://ezestom.github.io/portfolio/"
+			target="_blank"
+			class="anchor-img">
 			<img class="img" src={image1.src} alt={`Image about ${name}`} />
-		</figure>
+			<span
+				>Go to my Portfolio
+				<svg width="115" height="1" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M10 50 L150 50 L130 30 M150 50 L130 70"
+						stroke="black"
+						fill="transparent"
+						stroke-width="2"
+						class="animated-arrow"></path>
+				</svg>
+			</span>
+		</a>
 	</div>
 </Section>
 
@@ -112,6 +126,49 @@ const printInfo = [email, phone, linkedUrl, linksUrl]
 		font-weight: 500;
 		font-size: 1.1rem;
 		text-wrap: balance;
+	}
+	.anchor-img {
+		transition: all 0.3s ease;
+		position: relative;
+	}
+	a span {
+		position: absolute;
+		border-radius: 0.5rem;
+		transition: all 0.3s ease;
+		z-index: -1;
+		transform: translate(5%, -100%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: fit-content;
+		width: fit-content;
+		overflow: hidden;
+		font-size: 0.75rem;
+		padding: 0.5rem;
+		background-color: #fff;
+	}
+	.animated-arrow {
+		opacity: 0;
+		transition: all 0.3s ease;
+		transform: translateY(-3.1rem);
+	}
+	.anchor-img:hover {
+		filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.1));
+		transform: scale(1.1) rotate(-3deg) translate(-3px, -3px);
+		span {
+			rotate: 6deg;
+			transform: translate(0%, 10%) rotate(6deg);
+		}
+		.animated-arrow {
+			stroke-dasharray: 400; /* La longitud total del trazo */
+			stroke-dashoffset: 400; /* El trazo está oculto */
+			animation: draw 1s forwards ease-in-out;
+			opacity: 1;
+		}
+	}
+
+	.anchor-img:active {
+		transform: scale(0.95);
 	}
 	img {
 		aspect-ratio: 1/1;
@@ -174,6 +231,12 @@ const printInfo = [email, phone, linkedUrl, linksUrl]
 		}
 		.info {
 			padding: 0;
+		}
+	}
+
+	@keyframes draw {
+		to {
+			stroke-dashoffset: 0; /* El trazo se "dibuja" */
 		}
 	}
 </style>
