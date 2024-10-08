@@ -65,8 +65,8 @@ const { title } = Astro.props;
 		margin: 0;
 	}
 	h1,
-
-	h3, h2 {
+	h3,
+	h2 {
 		color: #333;
 	}
 	h4 {
@@ -76,7 +76,9 @@ const { title } = Astro.props;
 		color: #333;
 	}
 
-	p, span, time {
+	p,
+	span,
+	time {
 		color: #666;
 		font-size: 0.9rem;
 		line-height: 1.5;
@@ -99,5 +101,65 @@ const { title } = Astro.props;
 	.dark a,
 	.dark p {
 		color: #f9f9f9;
+	}
+
+	img {
+		/* que se muestre una vez la animación */
+		animation: custom-animation 5s 1;
+		position: relative; /* Necesario para mover los elementos con left y top */
+	}
+
+	@keyframes custom-animation {
+		19.8% {
+			left: 0;
+			top: 0;
+		}
+		20% {
+			left: 5%;
+			top: -5%;
+		}
+		20.2% {
+			left: 0;
+			top: 0;
+		}
+		37% {
+			top: 0;
+			filter: brightness(1);
+		}
+		41% {
+			top: 1%;
+			filter: brightness(1.08) blur(3px);
+			rotate: 1deg;
+		}
+		45% {
+			left: 0;
+			top: 0;
+			filter: brightness(1);
+			scale: 1.1;
+		}
+		70% {
+			filter: brightness(1) blur(0);
+		}
+		85% {
+			filter: brightness(1.08) blur(2px);
+			rotate: -1deg;
+		}
+		94.5% {
+			left: 0;
+			top: 0;
+		}
+		95% {
+			left: 1%;
+			top: 1%;
+		}
+		95.5% {
+			left: 0;
+			top: 0;
+		}
+		100% {
+			filter: brightness(1) blur(0);
+			scale: 1;
+			rotate: 0;
+		}
 	}
 </style>
