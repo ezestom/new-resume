@@ -66,8 +66,8 @@
 			"url": "https://github.com/ezestom/Courses-certificates-/blob/main/Ezequiel%20Stom_CTD_DH_PDF.pdf",
 			"area": "Professional Developer",
 			"studyType": "Bachelor",
-			"startDate": "2023-01-01",
-			"endDate": "2025-01-01",
+			"startDate": "2022-01-01",
+			"endDate": "2024-01-01",
 			"score": "4.0",
 			"courses": ["DB1101 - Basic SQL"]
 		},
@@ -76,8 +76,8 @@
 			"url": "https://github.com/ezestom/Oracle-Alura-One/blob/main/certificaciones/Ezequiel%20Federico%20Stom%20-%20Certificaci%C3%B3n%20Final%20-%20ONE.pdf",
 			"area": "Professional Developer",
 			"studyType": "Bachelor",
-			"startDate": "2024-01-01",
-			"endDate": "2025-01-01",
+			"startDate": "2023-01-01",
+			"endDate": "2024-01-01",
 			"score": "4.0",
 			"courses": ["DB1101 - Basic SQL"]
 		}
