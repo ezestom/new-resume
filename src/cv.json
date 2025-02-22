@@ -7,7 +7,7 @@
 		"whatsapp": "https://wa.me/+5491168641122",
 		"phone": "+54 9 11 6864 1122",
 		"url": "https://midu.dev",
-		"summary": "Frontend Developer with +2 years of experience specializing in crafting dynamic and compelling applications using JavaScript, React, Astro, and CSS-Tailwind. Currently, I am freelancing and based in Buenos Aires, Argentina. I seek to connect with companies and fellow web development professionals to explore growth opportunities, exchange knowledge, and collaborate on future projects.",
+		"summary": "Frontend Developer with over two years of experience building dynamic and engaging web applications using JavaScript, React, Astro, and Tailwind CSS. Passionate about creating seamless user experiences and staying ahead of the latest web technologies. Based in Buenos Aires, Argentina, I am currently freelancing while seeking opportunities to contribute to high-impact teams, collaborate with industry professionals, and expand my expertise in modern web development.",
 		"location": {
 			"address": "",
 			"postalCode": "B1605",
@@ -45,8 +45,11 @@
 			"url": "https://ezestom.github.io/portfolio/",
 			"startDate": "2022-02-01",
 			"endDate": null,
-			"summary": "Currently freelancing, staying up-to-date with the latest technologies and trends in the tech market. Simultaneously, actively seeking my first experience in a high-impact company.",
-			"highlights": "Working with clients like Cacta and Rhino, I have developed a variety of landing pages, e-commerce sites, and web applications. Additionally, I have collaborated with other developers on open-source projects."
+			"summary": "As a freelance developer, I have worked with clients such as Cacta, Rhino, and Inducítrica, delivering high-quality landing pages and web applications. I specialize in developing responsive, user-friendly interfaces and optimizing web performance to enhance user experience. My work also involves close collaboration with clients to understand their needs and deliver tailored solutions:",
+			"highlights1": "Developed responsive and high-performance web solutions across various industries.",
+			"highlights2": "Worked closely with clients to translate business requirements into functional, scalable web applications.",
+			"highlights3": "Optimized website performance and user experience through best practices in frontend development.",
+			"summary2": "I am actively seeking my first role in a high-impact company where I can contribute my expertise, collaborate with a dynamic team, and continue growing as a developer."
 		}
 	],
 	"volunteer": [
@@ -223,38 +226,37 @@
 				"Primary Industry"
 			],
 			"url": "https://cacta.eco/",
-			"github": "https://github.com/ezestom/Cacta-real-project"
+			"github": "https://github.com/ezestom/cacta-v2"
 		},
 		{
-			"name": "Sushi App",
+			"name": "Inducítrica",
 			"isActive": true,
-			"description": "Montevideo Sushi Restaurant App.",
-			"highlights": ["Food", "Astro", "Landing Page", "Tailwind"],
-			"url": "https://www.sushiapp.com.uy/",
-			"github": "https://github.com/ezestom/sushi-app"
-		},
-			{
-			"name": "Alloatti SRL",
-			"isActive": true,
-			"description": "Construction machinery for filling and washing water drums.",
-			"highlights": ["Water", "Machine", "Company", "React", "Tailwind"],
-			"url": "https://alloatti.vercel.app/",
-			"github": "https://github.com/ezestom/Alloatti-website"
-		},
-		{
-			"name": "Maiko Fpv",
-			"isActive": true,
-			"description": "Creative Filmmaker Utilizing Drones",
+			"description": "The biggest citrus company in Argentina.",
 			"highlights": [
-				"Edition",
-				"4k",
-				"Drones",
-				"Filmmaker",
-				"Technology",
-				"Creativity"
+				"Citrus",
+				"Tucumán",
+				"Farm",
+				"Export",
+				"Website",
+				"Primary Industry"
 			],
-			"url": "https://maiko-drone.vercel.app/",
-			"github": "https://github.com/ezestom/Maiko-fpv-web"
+			"url": "https://inducitrica.com/",
+			"github": "https://github.com/ezestom/Inducitrica"
+		},
+		{
+			"name": "Sambataro Arq.",
+			"isActive": true,
+			"description": "Architecture studio website. Argentina & Chile.",
+			"highlights": [
+				"Architecture",
+				"Studio",
+				"Design",
+				"Argentina",
+				"Chile",
+				"Website"
+			],
+			"url": "https://sambataroarquitectos.vercel.app/",
+			"github": "https://github.com/ezestom/sambataroarquitectos"
 		},
 		{
 			"name": "Steve Professor",
@@ -271,6 +273,23 @@
 			"github": "https://github.com/ezestom/steve-web"
 		},
 		{
+			"name": "Sushi App",
+			"isActive": true,
+			"description": "Montevideo Sushi Restaurant App.",
+			"highlights": ["Food", "Astro", "Landing Page", "Tailwind"],
+			"url": "https://www.sushiapp.com.uy/",
+			"github": "https://github.com/ezestom/sushi-app"
+		},
+		{
+			"name": "Alloatti SRL",
+			"isActive": true,
+			"description": "Construction machinery for filling and washing water drums.",
+			"highlights": ["Water", "Machine", "Company", "React", "Tailwind"],
+			"url": "https://alloatti.vercel.app/",
+			"github": "https://github.com/ezestom/Alloatti-website"
+		},
+
+		{
 			"name": "Sebastian 2002",
 			"isActive": true,
 			"description": "AOE2 website for a professional player and streamer, using View Transitions tech.",
@@ -284,6 +303,5 @@
 			"url": "https://sebastian2002.vercel.app/",
 			"github": "https://github.com/ezestom/Sebastian2002-AOE-Web"
 		}
-	
 	]
 }

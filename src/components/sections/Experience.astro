@@ -13,7 +13,10 @@ import { work } from "../../cv.json";
 					endDate,
 					position,
 					summary,
-					highlights,
+					highlights1,
+					highlights2,
+					highlights3,
+					summary2,
 				}) => {
 					const startYear = new Date(startDate).getFullYear();
 					const endYear =
@@ -34,20 +37,25 @@ import { work } from "../../cv.json";
 								</header>
 								<footer>
 									<p>{summary}</p>
-									<p>{highlights}</p>
+									<ul class="highlights-ul">
+										<li>
+											<span class="highlights">
+												• {highlights1}
+											</span>
+										</li>
+										<li>
+											<span class="highlights">
+												• {highlights2}
+											</span>
+										</li>
+										<li>
+											<span class="highlights">
+												• {highlights3}
+											</span>
+										</li>
+									</ul>
+									<p>{summary2}</p>
 								</footer>
-								<small>
-									Linkedin:{" "}
-									<code>
-										<a
-											href="https://www.linkedin.com/company/cactaeco/posts/?feedView=all"
-											target="_blank">
-											Cacta</a>
-										&
-										<a href="https://www.linkedin.com/company/rhino-saas/" target="_blank">
-											Rhino</a>.
-									</code>
-								</small>
 							</article>
 						</li>
 					);
@@ -75,7 +83,13 @@ import { work } from "../../cv.json";
 		align-items: start;
 		margin-bottom: 4px;
 	}
-	
+	.highlights-ul {
+		gap: 0;
+		padding: 0.5rem;
+	}
+	.highlights {
+		font-size: small;
+	}
 	small {
 		font-size: 0.85rem;
 		color: #555;
